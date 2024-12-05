@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" sizes="40x40" href="./kairi_Mailing-removebg-preview.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="./kairi_Mailing-removebg-preview.png" alt="Anonymous Email Tool Logo">
+                </a>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li class="cta-button">
+                        <a href="/get-started" class="btn btn-primary">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Send Anonymous Emails Securely and Confidentially</h1>
+                
+                <p class="hero-subheading">
+                    Secure Your Privacy and Communicate Anonymously: Use Our Anonymous Email 
+                    Tool to Send Private Messages Without Revealing Your Identity. Enjoy Confidential and Secure Communication with Ease!
+                </p>
+                
+                <div class="hero-features">
+                    <ul>
+                        <li>✓ 100% Anonymous Messaging</li>
+                        <li>✓ End-to-end Encryption</li>
+                        <li>✓ No Email Tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="/get-started" class="btn btn-primary">Send Anonymous Email Now</a>
+                    <a href="#how-it-works" class="btn btn-secondary">Learn How It Works</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img 
+                    src="./1572446525152-removebg-preview.png" 
+                    alt="Secure Anonymous Email Communication Platform"
+                    width="600" 
+                    height="400"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+    </section>
+    
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Kairi</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                            <line x1="1" y1="1" x2="23" y2="23"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">100% Anonymous</h3>
+                    <p class="feature-description">
+                        Our platform ensures complete anonymity. No personal information is stored or traced, 
+                        allowing you to communicate freely without fear of exposure or tracking.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure Platform</h3>
+                    <p class="feature-description">
+                        Advanced end-to-end encryption protects every communication. Our robust security protocols 
+                        ensure your messages remain completely confidential and inaccessible to unauthorized parties.
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Easy Integration</h3>
+                    <p class="feature-description">
+                        Seamless setup with intuitive interfaces and comprehensive documentation. 
+                        Connect and start anonymous messaging within minutes, no technical expertise required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="anonymous-email-section">
+        <div class="container">
+            <h2 class="section-title">Send Anonymous Email</h2>
+            <form id="anonymousEmailForm" class="anonymous-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="recipientName">Recipient's Name</label>
+                        <input 
+                            type="text" 
+                            id="recipientName" 
+                            name="recipientName" 
+                            placeholder="Enter recipient's full name"
+                            required
+                        >
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="emailSubject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="emailSubject" 
+                            name="emailSubject" 
+                            placeholder="Enter email subject"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ccRecipients">CC Recipients (Optional)</label>
+                        <input 
+                            type="text" 
+                            id="ccRecipients" 
+                            name="ccRecipients" 
+                            placeholder="Enter additional email addresses (comma-separated)"
+                        >
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="emailMessage">Your Message</label>
+                        <textarea 
+                            id="emailMessage" 
+                            name="emailMessage" 
+                            placeholder="Write your anonymous message here..."
+                            rows="6"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit" class="send-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Send Anonymous Email
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="pricing-wrapper">
+        <div class="tabs">
+            <button class="active" onclick="showPersonal()">Personal</button>
+            <button onclick="showEnterprise()">Enterprise</button>
+        </div>
+
+        <div id="personal-pricing" class="pricing-container">
+            <div class="pricing-card">
+                <h3>Pay-as-you-go</h3>
+                <p>$0.29 per email</p>
+                <ul>
+                    <li>Pay only for emails sent</li>
+                    <li>No monthly commitment</li>
+                    <li>Flexible usage</li>
+                </ul>
+                <button>Select Plan</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Unlimited Monthly</h3>
+                <p>$8.99/month</p>
+                <ul>
+                    <li>Unlimited email sends</li>
+                    <li>Best for regular users</li>
+                    <li>Consistent monthly rate</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </div>
+
+        <div id="enterprise-pricing" class="pricing-container" style="display:none;">
+            <div class="pricing-card">
+                <h3>Monthly Enterprise</h3>
+                <p>$15/month</p>
+                <ul>
+                    <li>Unlimited email sends</li>
+                    <li>Company access code</li>
+                    <li>Full Support</li>
+                </ul>
+                <button>Monthly Plan</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Lifetime Access</h3>
+                <span class="discount">20% off first year</span>
+                <p>$576 One-time</p>
+                
+                <ul>
+                    <li>Permanent product access</li>
+                    <li>Unlimited emails</li>
+                    <li>Unique company code</li>
+                </ul>
+                <button>Lifetime Access</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Kairi</h3>
+                    <p>Send suggestions and complains anonymously.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-section links">
+                    <h4>Other Products</h4>
+                    <ul>
+                        <li><a href="imageoasis.art">ImageOasis - Free Wallpapers</a></li>
+                        <li><a href="ytreceipt.vercel.app">Youtube Channel Receipt</a></li>
+                        <li><a href="titlestorm.vercel.app/">Viral Youtube Titles</a></li>
+                        <li><a href="adongojakes.vercel.app">Portfolio Website</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            MOM'S HOUSE
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            N/A
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            Coming Soon
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section newsletter">
+                    <h4>Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kairi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
